@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to HTML</title>
+    <!-- internal CSS -->
+    <style>
+        /*tag selector*/
+        /* p {
+            color: green;
+        } */
+        /*id selector*/
+        /* #head-1 {
+            color: red;
+        } */
+        /*class selector*/
+        /* .themes {
+            color: purple;
+        } */
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- heading tag -->
-    <h3>Welcome to my website!</h3>
+     <h1 id="head-1">Introduction to HTML</h1>
+     <h2 class="themes">HTML stands for Hypertext Markup Language</h2>
+     <!-- inline css attribute->style -->
+    <h3 style="color: blue;">Welcome to my website!</h3>
+    <h4 class="themes">This is a simple HTML page</h4>
     <!-- paragraph tag -->
     <p>This is a simple HTML page that demonstrates the basic structure of an HTML document. You can add more content and elements to customize your website.</p>
     <!-- image tag -->
@@ -21,7 +41,12 @@
         <li>JavaScript</li>
     </ol>
     <ul type="square">
-        <li>HTML</li>
+        <li>HTML
+            <ul>
+                <li>HTML5</li>
+                <li>HTML4</li>
+            </ul>
+        </li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
@@ -31,5 +56,35 @@
         <dd>Cascading Style Sheets</dd>
         <dd>JavaScript</dd>
     </dl>
+    <table border="1">
+        <tr><th colspan="2">Column 1</th></tr>
+        <tr><td>row1,col1</td><td rowSpan="2">row1,col2</td></tr>
+        <tr><td>row2,col1</td></tr>
+    </table>
+    <!-- semantic tags -->
+     <header></header>
+     <nav></nav>
+     <aside></aside>
+     <section></section>
+     <br>
+     <hr>
+     <br>
+     <!-- container tag -->
+     <form>
+        <label for="name">name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+        <label for="pswd">password:</label>
+        <input id="pswd" type="password" placeholder="Enter your password"/>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="female">female</label>
+        <input type="radio" name="gender" value="female">
+
+        <label for="mail">email:</label>
+        <input id="mail" type="email" placeholder="Enter your email"/>
+        <label>Please accept</label>
+        <input type="checkbox" value="accept">
+        <button disabled>Register Now</button>
+     </form>
 </body>
 </html>

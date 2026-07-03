@@ -1,0 +1,14 @@
+/* tag selector */
+p {
+    color: green;
+}
+
+/*id selector*/
+#head-1 {
+    color: red;
+}
+
+/*class selector*/
+.themes {
+    color: purple;
+}
