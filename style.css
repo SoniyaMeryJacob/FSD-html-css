@@ -1,45 +1,117 @@
 /* tag selector */
 p {
-    color: green;
+  color: green;
 }
 
 /*id selector*/
 #head-1 {
-    color: red;}
+  color: red;
+}
 
 /*class selector*/
 .themes {
-    color: purple;
+  color: purple;
 }
 .card {
-    border: 1px solid #150;
-    /*top,right,bottom,left*/padding: 15px 20px 25px 30px;
-    margin:10px;
-    width: 300px;
-    border-radius: 10px;
-    background-color: rgba(110, 102, 152, 0.8);
+  border: 1px solid #150;
+  /*top,right,bottom,left*/
+  padding: 15px 20px 25px 30px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgba(110, 102, 152, 0.8);
 }
 .card-img-1 {
-    width: 200px;
-    height: 150px;}
+  width: 200px;
+  height: 150px;
+}
 .card-img-2 {
-    width: 200px;
-    height: 150px;
-    border-radius: 100%;
-
+  width: 200px;
+  height: 150px;
+  border-radius: 100%;
 }
-h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
-p{
-    font-family: "Merriweather", serif;
-    line-height: 1.6;
-    font-weight: 200;
+p {
+  font-family: "Merriweather", serif;
+  line-height: 1.6;
+  font-weight: 200;
 }
-h2{
-    color: #150;
+h2 {
+  color: #150;
 }
-td{
-    text-align: center;
+td {
+  text-align: center;
+}
+/* css positioning */
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  position: relative;
+}
+.child-1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 127, 238);
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.child-2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 253, 127);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+/* flexbox */
+.card-1 {
+  width: 200px;
+  height: 100px;
+  background-color: #150;
+}
+.card-2 {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
+.card-3 {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+}
+.home {
+  display: flex;
+  background-color: rgb(196, 183, 179);
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* justify-content: center; */
+  /* gap: 50px; */
+  height: 200px;
+  align-items: center;
+}
+/* navigation menu*/
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.76);
+  nav {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      padding: 10px 20px;
+      display: block;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        background-color: aqua;
+        color: black;
+        border-radius: 15px;
+      }
+    }
+  }
 }
