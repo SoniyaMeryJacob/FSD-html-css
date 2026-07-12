@@ -94,27 +94,7 @@ td {
   height: 200px;
   align-items: center;
 }
-/* navigation menu*/
-header {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.76);
-  nav {
-    display: flex;
-    a {
-      text-decoration: none;
-      color: aliceblue;
-      padding: 10px 20px;
-      display: block;
-      transition: 0.5s ease-in-out;
-      &:hover {
-        background-color: aqua;
-        color: black;
-        border-radius: 15px;
-      }
-    }
-  }
-}
+
 /* css grid */
 .container {
   display: grid;
@@ -145,17 +125,4 @@ header {
   }
 }
 
-/* Table */
-table {
-  width: 90%;
-  border-collapse: collapse;
-  background-color: white;
-}
 
-/* Table Cells */
-th,
-td {
-  border: 2px solid #070606;
-  padding: 12px;
-  text-align: center;
-}
